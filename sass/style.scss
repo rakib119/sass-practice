@@ -1,0 +1,17 @@
+$Pcolor : red;
+$sColor : orange;
+@mixin squire($h,$color){
+    width:$h ;
+    height:$h ;
+    background: $color;
+}
+h1{
+    color: $Pcolor;
+}
+.one{
+    @include squire(200px,$Pcolor );
+    margin-bottom: 20px;
+}
+.two{
+    @include squire(300px,$sColor );
+}
